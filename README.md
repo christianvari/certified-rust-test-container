@@ -10,5 +10,5 @@ docker build -t certified-rust-test-container .
 ## Run
 
 ```
-docker run --rm --name rust-test -v code_target:/test certified-rust-test-container
+docker run --rm --name rust-test -v $(pwd):/test certified-rust-test-container
 ```
